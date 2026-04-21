@@ -1,5 +1,16 @@
 # emdash
 
+## 0.6.1
+
+### Patch Changes
+
+- [#685](https://github.com/emdash-cms/emdash/pull/685) [`d4a95bf`](https://github.com/emdash-cms/emdash/commit/d4a95bf313855e97108dfec4de3ab35f1a85f8ba) Thanks [@ascorbic](https://github.com/ascorbic)! - Fixes visual editing: clicking an editable field now opens the inline editor instead of always opening the admin in a new tab. The toolbar's manifest fetch was reading `manifest.collections` directly but the `/_emdash/api/manifest` endpoint wraps its payload in `{ data: … }`, so every field-kind lookup returned `null` and every click fell through to the admin-new-tab fallback.
+
+- Updated dependencies [[`fa8d753`](https://github.com/emdash-cms/emdash/commit/fa8d7533e8ba7e02599372d580399dae88ecd891)]:
+  - @emdash-cms/admin@0.6.1
+  - @emdash-cms/auth@0.6.1
+  - @emdash-cms/gutenberg-to-portable-text@0.6.1
+
 ## 0.6.0
 
 ### Minor Changes
